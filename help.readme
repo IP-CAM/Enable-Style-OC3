@@ -1,7 +1,7 @@
 
 I added in admin/controller/setting/setting.php
 
-```
+```ruby
 if (isset($this->request->post['config_boxed'])) {
 			$data['config_boxed'] = $this->request->post['config_boxed'];
 		} else {
