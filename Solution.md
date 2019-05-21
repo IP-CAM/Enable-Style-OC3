@@ -34,7 +34,7 @@ in admin/view/template/setting/setting.twig the following code
 in catalog/controller/common/header.php in the end
 
 ```
-	$data['config_boxed'] = $this->config->get('config_boxed');
+$data['config_boxed'] = $this->config->get('config_boxed');
 ```
 
 in catalog/view/theme/default/template/common/header.twig 
