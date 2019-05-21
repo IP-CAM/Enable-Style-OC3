@@ -1,4 +1,3 @@
-# Enable-Style-OC3
 # Adding new style Enable/Disable option button in Opencart 3.0.3.2 admin page.
 
 
