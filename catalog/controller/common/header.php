@@ -104,6 +104,7 @@ class ControllerCommonHeader extends Controller {
 		$data['menu'] = $this->load->controller('common/menu');
 		
 		$data['config_boxed'] = $this->config->get('config_boxed');
+		
 
 		return $this->load->view('common/header', $data);
 	}
