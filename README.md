@@ -1,4 +1,5 @@
-# Enable-Style-OC3
+# Adding new style Enable/Disable option button in Opencart 3.0.3.2 admin page.
+
 
 I added in admin/controller/setting/setting.php
 
@@ -29,15 +30,20 @@ in admin/view/template/setting/setting.twig the following code
 </div> 
 ```
 
-From catalog/view/theme/default/template/common/header.twig I would like to access the config_boxed variable.
-Where and what should I add more.
+in catalog/controller/common/header.php in the end
 
 ```
-{% if config_boxed %}
-	<b>Enabled</b>
-	<link href="catalog/view/theme/default/stylesheet/own.css" rel="stylesheet">
-{% else %}
-	 False
+$data['config_boxed'] = $this->config->get('config_boxed');
+```
+
+in catalog/view/theme/default/template/common/header.twig 
+
+```
+{% if config_boxed %} 
+	<link href="catalog/view/theme/kedvenc/stylesheet/new.css" rel="stylesheet">
+{% else %} 
+	<link href="catalog/view/theme/kedvenc/stylesheet/old.css" rel="stylesheet">
 {% endif %}
 ```
-Many thanks 
+
+Done!
