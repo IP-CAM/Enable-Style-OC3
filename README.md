@@ -1,4 +1,4 @@
-# Adding new style Enable/Disable option button in Opencart 3.0.3.2 admin page.
+# Adding new Style Enable/Disable option button in Opencart 3.0.3.2 admin page.
 
 
 I added in admin/controller/setting/setting.php
